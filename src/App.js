@@ -1,23 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Button, Title, Input, Link, Logo } from './components';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <Button textDefault="This is a Button." />
+          <Title sizeElement="h1" text="This is a Title." />
+          <Input placeholderText="This is an Input." />
+          <Link text="This is a link."/>
+          <Logo />
       </header>
     </div>
   );
