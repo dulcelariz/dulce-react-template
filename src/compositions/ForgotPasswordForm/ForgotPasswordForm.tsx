@@ -1,31 +1,26 @@
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
 
-interface LoginFormProps {
+interface ForgotPasswordFormProps {
   
 }
 
-export default class LoginForm extends React.Component<LoginFormProps> {
+export default class ForgotPasswordForm extends React.Component<ForgotPasswordFormProps> {
   render() {
     return (
       <Form>
+        <Form.Text className="text-muted">
+          Enter your email to receive an email to recovery password.
+        </Form.Text>
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
         </Form.Group>
-
-        <Form.Group controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
-        </Form.Group>
         <Button variant="secondary" type="submit">
-          Sign up
-        </Button>
-        <Button variant="link" type="submit">
-          Forgot password?
+          Cancel
         </Button>
         <Button variant="primary" type="submit">
-          Login
+          Recovery
         </Button>
       </Form>
     );

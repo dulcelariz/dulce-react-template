@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import { SignupScreen } from './screens'
+import { ForgotPasswordScreen } from './screens'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-          <SignupScreen />
+          <ForgotPasswordScreen />
       </header>
     </div>
   );
