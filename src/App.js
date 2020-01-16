@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import { ForgotPasswordScreen } from './screens'
+import { ChangePasswordScreen } from './screens'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-          <ForgotPasswordScreen />
+          <ChangePasswordScreen />
       </header>
     </div>
   );
