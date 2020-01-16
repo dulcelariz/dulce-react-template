@@ -1,16 +1,17 @@
 import React from 'react';
 import './App.css';
-import { Button, Title, Input, Link, Logo } from './components';
+import { Title, Input, Link, Logo } from './components';
+import { LoginForm } from './compositions'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-          <Button textDefault="This is a Button." />
           <Title sizeElement="h1" text="This is a Title." />
           <Input placeholderText="This is an Input." />
           <Link text="This is a link."/>
           <Logo />
+          <LoginForm />
       </header>
     </div>
   );
